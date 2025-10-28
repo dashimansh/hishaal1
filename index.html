@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More Birthday Details</title>
+    <link rel="stylesheet" href="style.css"> 
+    <style>
+        /* ===== Birthday Page Styling ===== */
+
+body {
+  background: linear-gradient(135deg, #ffb6c1, #ffe4e1, #fff0f5);
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  line-height: 1.6;
+}
+
+.container {
+  text-align: center;
+  padding: 40px;
+  max-width: 800px;
+}
+
+.container h1 {
+  font-size: 3rem;
+  color: #ff1493;
+  text-shadow: 2px 2px 10px rgba(255, 20, 147, 0.4);
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px #ff69b4, 0 0 20px #ff69b4; }
+  to { text-shadow: 0 0 20px #ff1493, 0 0 30px #ff69b4; }
+}
+
+.message {
+  font-size: 1.2rem;
+  color: #444;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 15px 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(255, 105, 180, 0.3);
+  margin: 20px 0;
+}
+
+.video-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.video-container video {
+  width: 80%;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 20, 147, 0.4);
+  border: 3px solid #fff;
+}
+
+.back-link a {
+  display: inline-block;
+  margin-top: 30px;
+  text-decoration: none;
+  background-color: #ff69b4;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.back-link a:hover {
+  background-color: #ff1493;
+  transform: scale(1.05);
+}
+
+.video-container {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.video-container video {
+  width: 55%;            /* ✅ Medium size — adjust between 45–60% as you like */
+  max-width: 600px;      /* Prevents it from getting too large */
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(255, 20, 147, 0.4);
+  border: 3px solid #fff;
+  transition: all 0.4s ease;
+}
+
+.video-container video:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 30px rgba(255, 105, 180, 0.6);
+}
+/* ===== Decorative Birthday Images ===== */
+.decor {
+  position: fixed;
+  top: 50%;
+  width: 120px;
+  height: auto;
+  transform: translateY(-50%);
+  opacity: 0.8;
+  z-index: 0;
+  transition: all 0.4s ease-in-out;
+  animation: float 3s ease-in-out infinite;
+}
+
+.decor-left {
+  left: 20px;
+  animation-delay: 0.5s;
+}
+
+.decor-right {
+  right: 20px;
+  animation-delay: 1s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(-50%) translateY(0);
+  }
+  50% {
+    transform: translateY(-50%) translateY(-10px);
+  }
+}
+
+.decor:hover {
+  transform: translateY(-50%) scale(1.1);
+  opacity: 1;
+}
+
+
+    </style>
+</head>
+<body>
+   <body>
+    <!-- 🎈 Left decoration -->
+    <img src="balloon-left.jpg" alt="balloon left" class="decor decor-left">
+
+    <!-- 🎂 Right decoration -->
+    <img src="balloon-right.jpg" alt="balloon right" class="decor decor-right">
+
+    <div id="wrapper">
+        <div class="container">
+            <h1>Happy Birthday my proton! 🎉</h1>
+            
+            <p class="message">“You make every day brighter just by being you.
+            I am so grateful for your love, your laughter, and all our memories together.
+            Happy Birthday, my love 💖”.</p>
+
+            <p class="message">Tre bina kuch nhi hai Shaalu, It's you who give me strength ❤️</p>
+
+            <div class="video-container">
+                <video controls autoplay loop muted>
+                    <source src="birthday_video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="back-link">
+                <a href="details1.html">
+                    <span class="arrow">🎨</span> Go Back to the Gallery
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</body>
+</html>
